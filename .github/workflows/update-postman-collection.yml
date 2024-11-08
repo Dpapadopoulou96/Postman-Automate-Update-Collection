@@ -2,7 +2,8 @@ name: Update Postman Collection
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Εκτελεί το action κάθε ώρα (μπορείς να το αλλάξεις)
+    - cron: '*/5 * * * *'  # Εκτελεί το action κάθε 5 λεπτά (μπορείς να το αλλάξεις)
+  workflow_dispatch:    # Επιτρέπει τη χειροκίνητη εκτέλεση του action
 
 jobs:
   update-collection:
@@ -23,4 +24,3 @@ jobs:
         author_name: "drpapadopoulou96"
         author_email: "dionysia.papadopoulou@consolut.com"
         message: "Update Postman Collection"
-
