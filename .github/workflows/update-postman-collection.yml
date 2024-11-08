@@ -2,7 +2,7 @@ name: Update Postman Collection
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Εκτελεί το action κάθε ώρα (μπορείς να το αλλάξεις)
+    - cron: '0 * * * *'  # Εκτελεί το action κάθε ώρα
   workflow_dispatch:  # Προσθήκη για χειροκίνητο trigger
 
 jobs:
@@ -22,10 +22,8 @@ jobs:
       run: |
         git config user.name "GitHub Actions"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        # Ρύθμιση του remote URL με το GH_TOKEN για αυθεντικοποίηση
-        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git
+        # Ρύθμιση του remote URL με το TestingToken για αυθεντικοποίηση
+        git remote set-url origin https://x-access-token:${{ secrets.TestingToken }}@github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git
         git add postman-collection.json
         git commit -m "Update Postman Collection"
         git push origin HEAD:main
-      env:
-        GH_TOKEN: ${{ secrets.TestingToken }}
