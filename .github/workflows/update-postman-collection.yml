@@ -19,12 +19,13 @@ jobs:
         -H "Accept: application/json" -o postman-collection.json
 
     - name: Commit and Push changes
-      env:
-        TOKEN: ${{ secrets.TestingToken }}  # Χρήση του PAT για το git push
       run: |
         git config user.name "GitHub Actions"
         git config user.email "github-actions[bot]@users.noreply.github.com"
+        # Ρύθμιση του remote URL με το GH_TOKEN για αυθεντικοποίηση
+        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git
         git add postman-collection.json
         git commit -m "Update Postman Collection"
-        git push https://$TOKEN@github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git HEAD:main
-
+        git push origin HEAD:main
+      env:
+        GH_TOKEN: ${{ secrets.TestingToken }}
