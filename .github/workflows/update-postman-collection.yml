@@ -2,7 +2,8 @@ name: Update Postman Collection
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Εκτελεί το action κάθε ώρα
+    
+    - cron: '0 0,12 * * *'  # Εκτελεί το action κάθε 12 ώρες, στις 00:00 και στις 12:00 UTC
   workflow_dispatch:  # Προσθήκη για χειροκίνητο trigger
 
 jobs:
