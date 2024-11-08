@@ -1,0 +1,27 @@
+name: Update Postman Collection
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Εκτελεί το action κάθε ώρα
+
+jobs:
+  update-collection:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Fetch Postman Collection
+      run: |
+        curl -X GET "https://api.postman.com/collections/39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5?access_key=PMAT-01JC679VDCTD39M3A810G06R9R" \
+        -H "Accept: application/json" -o postman-collection.json
+
+    - name: Commit and Push changes
+      uses: EndBug/add-and-commit@v7
+      with:
+        author_name: "drpapadopoulou96"
+        author_email: "dionysia.papadopoulou@consolut.com"
+        message: "Update Postman Collection"
+
+
