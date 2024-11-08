@@ -2,8 +2,7 @@ name: Update Postman Collection
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Εκτελεί το action κάθε 5 λεπτά (μπορείς να το αλλάξεις)
-  workflow_dispatch:    # Επιτρέπει τη χειροκίνητη εκτέλεση του action
+    - cron: '0 * * * *'  # Εκτελεί το action κάθε ώρα (μπορείς να το αλλάξεις)
 
 jobs:
   update-collection:
@@ -19,8 +18,19 @@ jobs:
         -H "Accept: application/json" -o postman-collection.json
 
     - name: Commit and Push changes
-      uses: EndBug/add-and-commit@v7
-      with:
-        author_name: "drpapadopoulou96"
-        author_email: "dionysia.papadopoulou@consolut.com"
-        message: "Update Postman Collection"
+      run: |
+        # Ρύθμιση του χρήστη και email για το Git
+        git config user.name "GitHub Actions"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Αλλαγή του remote URL ώστε να χρησιμοποιεί το προσωπικό token
+        git remote set-url origin https://github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git
+        
+        # Προσθήκη των αλλαγών και commit
+        git add postman-collection.json
+        git commit -m "Update Postman Collection"
+        
+        # Push στις αλλαγές χρησιμοποιώντας το GH_TOKEN για αυθεντικοποίηση
+        git push https://github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git HEAD:main
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Χρήση του PAT για το git push
