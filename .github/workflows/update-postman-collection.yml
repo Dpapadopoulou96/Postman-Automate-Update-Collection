@@ -27,5 +27,4 @@ jobs:
         git commit -m "Update Postman Collection"
         git push https://github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git HEAD:main
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
+        TestingToken: ${{ secrets.TestingToken }}  # Χρήση του PAT για το git push
