@@ -22,8 +22,12 @@ jobs:
       run: |
         git config user.name "GitHub Actions"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        # Ρύθμιση του remote URL με το TestingToken για αυθεντικοποίηση
-        git remote set-url origin https://x-access-token:${{ secrets.TestingToken }}@github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git
+        
+        # Προσθήκη των αλλαγών και commit
         git add postman-collection.json
         git commit -m "Update Postman Collection"
-        git push origin HEAD:main
+        
+        # Push χρησιμοποιώντας το GH_TOKEN για αυθεντικοποίηση
+        git push https://$GH_TOKEN@github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git HEAD:main
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
