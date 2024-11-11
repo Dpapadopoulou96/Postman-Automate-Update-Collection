@@ -1,47 +1,50 @@
 name: Update Postman Collection
 
 on:
-  # The schedule configuration below will automatically run the workflow at 00:00 and 12:00 UTC
   schedule:
     - cron: '0 0,12 * * *'  # Runs the action every 12 hours, at 00:00 and 12:00 UTC
-  
-  # The workflow_dispatch option allows for manual trigger of the workflow
-  workflow_dispatch:  # Allows manually starting the workflow from GitHub Actions
+  workflow_dispatch:  # Allows manually triggering the workflow
 
 jobs:
   update-collection:
-    runs-on: ubuntu-latest  # Specifies that the job will run on the latest Ubuntu runner
+    runs-on: ubuntu-latest  # This specifies the environment for running the job
 
     steps:
-    # Step 1: Check out the repository to have the latest code from the GitHub repo
+    # Step 1: Checkout the repository
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    # Step 2: Fetch the latest Postman Collection from the Postman API
+    # Step 2: Fetch the latest Postman collection from the Postman API
     - name: Fetch Postman Collection
       run: |
-        # Replace 'YOUR_COLLECTION_ID' with the actual Postman Collection ID
-        # The secrets.POSTMAN_API_KEY should be set in the repository's "Secrets" settings
         curl -X GET "https://api.postman.com/collections/39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5?access_key=${{ secrets.POSTMAN_API_KEY }}" \
         -H "Accept: application/json" -o postman-collection.json
 
     # Step 3: Format the Postman collection JSON for better readability
     - name: Format Postman Collection JSON
       run: |
-        # Format the JSON file using jq to make it more readable
         jq . postman-collection.json > postman-collection-formatted.json
-        mv postman-collection-formatted.json postman-collection.json  # Replace the old file with the formatted one
+        mv postman-collection-formatted.json postman-collection.json  # Replaces the original file with the formatted one
 
-    # Step 4: Commit and push the updated Postman collection to GitHub
+    # Step 4: Check if any changes were made to the file
+    - name: Check if changes were made
+      run: |
+        # Check if there are any changes in the repository
+        git status
+
+    # Step 5: Commit and Push changes if there are any
     - name: Commit and Push changes
       run: |
-        # Configure Git to use the bot credentials for committing changes
+        # Configure Git to use the bot for committing changes
         git config user.name "GitHub Actions"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         
-        # Add the updated Postman collection file to the Git index
+        # Add the modified file to the staging area
         git add postman-collection.json
+        git diff --cached  # Check the changes added to the staging area
         git commit -m "Update Postman Collection"
         
-        # Push the changes to the main branch
-        # Use the GH_TOKEN for authentication, ensuring it's set as a secret in the repos
+        # Push the changes to the main branch if there are modifications
+        git push https://$GH_TOKEN@github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git HEAD:main
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Ensure that GH_TOKEN is properly set in GitHub Secrets
