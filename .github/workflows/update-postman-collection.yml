@@ -1,34 +1,47 @@
 name: Update Postman Collection
 
 on:
+  # The schedule configuration below will automatically run the workflow at 00:00 and 12:00 UTC
   schedule:
-    
-    - cron: '0 0,12 * * *'  # Εκτελεί το action κάθε 12 ώρες, στις 00:00 και στις 12:00 UTC
-  workflow_dispatch:  # Προσθήκη για χειροκίνητο trigger
+    - cron: '0 0,12 * * *'  # Runs the action every 12 hours, at 00:00 and 12:00 UTC
+  
+  # The workflow_dispatch option allows for manual trigger of the workflow
+  workflow_dispatch:  # Allows manually starting the workflow from GitHub Actions
 
 jobs:
   update-collection:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Specifies that the job will run on the latest Ubuntu runner
 
     steps:
+    # Step 1: Check out the repository to have the latest code from the GitHub repo
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    # Step 2: Fetch the latest Postman Collection from the Postman API
     - name: Fetch Postman Collection
       run: |
+        # Replace 'YOUR_COLLECTION_ID' with the actual Postman Collection ID
+        # The secrets.POSTMAN_API_KEY should be set in the repository's "Secrets" settings
         curl -X GET "https://api.postman.com/collections/39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5?access_key=${{ secrets.POSTMAN_API_KEY }}" \
         -H "Accept: application/json" -o postman-collection.json
 
+    # Step 3: Format the Postman collection JSON for better readability
+    - name: Format Postman Collection JSON
+      run: |
+        # Format the JSON file using jq to make it more readable
+        jq . postman-collection.json > postman-collection-formatted.json
+        mv postman-collection-formatted.json postman-collection.json  # Replace the old file with the formatted one
+
+    # Step 4: Commit and push the updated Postman collection to GitHub
     - name: Commit and Push changes
       run: |
+        # Configure Git to use the bot credentials for committing changes
         git config user.name "GitHub Actions"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         
-        # Προσθήκη των αλλαγών και commit
+        # Add the updated Postman collection file to the Git index
         git add postman-collection.json
         git commit -m "Update Postman Collection"
         
-        # Push χρησιμοποιώντας το GH_TOKEN για αυθεντικοποίηση
-        git push https://$GH_TOKEN@github.com/Dpapadopoulou96/Postman-Automate-Update-Collection.git HEAD:main
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        # Push the changes to the main branch
+        # Use the GH_TOKEN for authentication, ensuring it's set as a secret in the repos
