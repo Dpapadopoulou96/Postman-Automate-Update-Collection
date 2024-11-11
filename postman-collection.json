@@ -1,1 +1,1388 @@
-{"collection":{"info":{"_postman_id":"83f54cd5-6d8f-4317-87bb-1c7f68ef47d5","name":"SAP Integration Suite DRP (github)","description":"A new Collection !!","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json","updatedAt":"2024-11-11T15:52:25.000Z","createdAt":"2024-11-08T13:24:52.000Z","lastUpdatedBy":"39579054","uid":"39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"},"item":[{"name":"example 01 drp","id":"9fe64e9b-c76f-47b3-a9ae-889e40b0ab49","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"FirstName","value":"BILL","type":"text"},{"key":"LastName","value":"CLINTON","type":"text"},{"key":"BirthDate","value":"20-9-1996","type":"text"},{"key":"hobbies","value":"video games; gym; reading; hiking; driving","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example01","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","example01"]}},"response":[],"uid":"39579054-9fe64e9b-c76f-47b3-a9ae-889e40b0ab49"},{"name":"EXAMPLE 01","id":"e188d4a2-b270-4b32-b14c-57e4dc6216aa","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrganization","value":"1710","type":"text"},{"key":"Price","value":"112677.00 USD","type":"text"},{"key":"CreatedAt","value":"23.01.05","type":"text"}],"body":{"mode":"raw","raw":"<Material>MZ-FG-M550</Material>\r\n\r\n\r\n\r\n"},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/getMaterialDetails","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","getMaterialDetails"]}},"response":[],"uid":"39579054-e188d4a2-b270-4b32-b14c-57e4dc6216aa"},{"name":"REQUEST TASK 2 (with oDATA SERVICE)","id":"de5a3e94-ca4a-4283-8233-ca03b471eddb","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrder","value":"9000","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example02","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","example02"]}},"response":[],"uid":"39579054-de5a3e94-ca4a-4283-8233-ca03b471eddb"},{"name":"EXAMPLE 03","id":"a3e31325-6f01-4bdc-9d76-c35661aa71e2","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrderNumber","value":"5600","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example03","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","example03"],"query":[{"key":"","value":"","disabled":true}]}},"response":[],"uid":"39579054-a3e31325-6f01-4bdc-9d76-c35661aa71e2"},{"name":"EXAMPLE 04","id":"9de3113d-7083-424a-9502-93cb94db82b1","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrderNumber","value":"6448","type":"text"}],"body":{"mode":"raw","raw":"<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>MZ-FG-M525\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>","options":{"raw":{"language":"json"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example04","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","example04"]}},"response":[],"uid":"39579054-9de3113d-7083-424a-9502-93cb94db82b1"},{"name":"bp 1","id":"9f784b02-63d0-4624-a675-3ba2bca1b4fe","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"BusinessPartner","value":"173000001","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BP1","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","BP1"],"query":[{"key":"BusinessPartner","value":"17411710","disabled":true}]}},"response":[],"uid":"39579054-9f784b02-63d0-4624-a675-3ba2bca1b4fe"},{"name":"EXAMPLE 05","id":"c78cea68-e8e4-428b-9dcb-1ea257681b54","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example05","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","example05"]}},"response":[],"uid":"39579054-c78cea68-e8e4-428b-9dcb-1ea257681b54"},{"name":"TASK2-DAY2","id":"120a6dab-cf64-4f36-b086-97209a4b85b4","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"BusinessPartner","value":"","type":"text","disabled":true}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BP/task2\n","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","BP","task2\n"]},"description":"2) Create another iflow, which retrieves multiple business partners\r\n2.1) We must retrieve BP that have been created during 2020 or later\r\nWe need to fetch the first 30 entries, not every single entry\r\nSelect all available fields on level 0\r\n2.2) Convert the output body into JSON. Also use the appropriate header to define that we are using this output.\r\n"},"response":[],"uid":"39579054-120a6dab-cf64-4f36-b086-97209a4b85b4"},{"name":"TASK3-DAY 2","id":"581b55d4-f1f1-47b2-8554-6382ee8de3e0","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BP/task3?BusinessPartner=BP1010","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","BP","task3"],"query":[{"key":"BusinessPartner","value":"BP1010"}]}},"response":[],"uid":"39579054-581b55d4-f1f1-47b2-8554-6382ee8de3e0"},{"name":"example 04 local call","id":"884dce39-94c0-4585-a9b5-ce749e3920b3","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrderNumber","value":"2325","type":"text"}],"body":{"mode":"raw","raw":"<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>","options":{"raw":{"language":"xml"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/drp/example04/local/process?SalesOrderNumber=1232","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","drp","example04","local","process"],"query":[{"key":"SalesOrderNumber","value":"1232"}]},"description":"adding a new local call"},"response":[],"uid":"39579054-884dce39-94c0-4585-a9b5-ce749e3920b3"},{"name":"EXAMPLE 08","id":"dfc2d525-d445-40ac-b26c-f6fb31aa9cbc","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrder","value":"9425","type":"text"}],"body":{"mode":"raw","raw":"<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>","options":{"raw":{"language":"xml"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/AS/example08?SalesOrder=6373","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","AS","example08"],"query":[{"key":"SalesOrder","value":"6373"}]}},"response":[],"uid":"39579054-dfc2d525-d445-40ac-b26c-f6fb31aa9cbc"},{"name":"Externalized Parameters","id":"ec8001a6-c3b2-4f6a-a6e8-4ba14d0d3a66","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/testing/iflow/drp","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","testing","iflow","drp"]},"description":"Request using externalized parameters\r\n\r\ni-flow: consolut_learn_testing_iflow_drp"},"response":[],"uid":"39579054-ec8001a6-c3b2-4f6a-a6e8-4ba14d0d3a66"},{"name":"BusinessPartnerData","id":"8b9b5e2c-03b2-4688-abd5-09c5f644cfff","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BusinessPartnerData","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","BusinessPartnerData"]}},"response":[],"uid":"39579054-8b9b5e2c-03b2-4688-abd5-09c5f644cfff"},{"name":"BusinessPartnerDataAddress","id":"b9b844c0-259c-47b8-b2ed-eb4817829fbd","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BusinessPartnerDataAddress","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","BusinessPartnerDataAddress"]}},"response":[],"uid":"39579054-b9b844c0-259c-47b8-b2ed-eb4817829fbd"},{"name":"send Email","id":"896dcec6-e071-41f3-94c7-0eea42a1d60c","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"userBP","value":"\n","type":"text","disabled":true},{"key":"userBP","value":"10910010","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/sendEmail","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","sendEmail"]}},"response":[],"uid":"39579054-896dcec6-e071-41f3-94c7-0eea42a1d60c"},{"name":"example 10","id":"2097c9ea-827b-400c-99b7-4ca997dd958e","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrderNumber","value":"7700","type":"text"}],"body":{"mode":"raw","raw":"<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>","options":{"raw":{"language":"xml"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example10","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","example10"]}},"response":[],"uid":"39579054-2097c9ea-827b-400c-99b7-4ca997dd958e"},{"name":"Post SO from Json input","id":"6d960233-930b-4e5f-9265-44e095bc43ac","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"body":{"mode":"raw","raw":"{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"9\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"10\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n \r\n","options":{"raw":{"language":"json"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/testingCreateSO","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","testingCreateSO"]},"description":"εισοδος- αρχειο σε json\r\n-μετατροπη σε xml\r\n-Post -για δημιουργια παραγγελιας"},"response":[],"uid":"39579054-6d960233-930b-4e5f-9265-44e095bc43ac"},{"name":"createSalesOrderFinal","id":"20eb1927-3fea-4ccc-8ff7-6ed40220deb8","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"POST","header":[],"body":{"mode":"raw","raw":"{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"1\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"3\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n \r\n","options":{"raw":{"language":"json"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/createSalesOrderFinal","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","createSalesOrderFinal"]}},"response":[],"uid":"39579054-20eb1927-3fea-4ccc-8ff7-6ed40220deb8"},{"name":"createSalesOrderFinalSendEmail","id":"96c3a733-3794-4f1d-bee2-175d49eaa0e8","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"POST","header":[],"body":{"mode":"raw","raw":"{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"9\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"10\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n \r\n","options":{"raw":{"language":"json"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/createSalesOrderFinal/sendEmail","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","createSalesOrderFinal","sendEmail"]},"description":"DAY 4-TASK2B (NIKOLETA'S)\r\n-Json input\r\n-check bp if is soldtoparty\r\n-check given requestedquantities\r\n-based on them , create sales order\r\n-or send email"},"response":[],"uid":"39579054-96c3a733-3794-4f1d-bee2-175d49eaa0e8"},{"name":"ThrowExceptions","id":"9a8f09b6-96f1-4261-bda0-922701c6b7eb","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrderNumber","value":"1996","type":"text"}],"body":{"mode":"raw","raw":"<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>MZ-FG-M525\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>","options":{"raw":{"language":"xml"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/ThrowExceptions","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","ThrowExceptions"]}},"response":[],"uid":"39579054-9a8f09b6-96f1-4261-bda0-922701c6b7eb"},{"name":"Attachments","id":"4e341396-bc2d-46e1-9a4b-f9be5d1fd861","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrderNumber","value":"32455","type":"text"}],"body":{"mode":"raw","raw":"<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>MZ-FG-M525\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>","options":{"raw":{"language":"xml"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/Attachments","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","Attachments"]},"description":"βαζουμε 1 script για να δημιουργησουμε attachments. Με αυτο τον τροπο εχουμε περισσοτερες πληροφοριες για το iflow χωρις να χρειαζεται συνεχεια να κανουμε το trace : ON"},"response":[],"uid":"39579054-4e341396-bc2d-46e1-9a4b-f9be5d1fd861"},{"name":"DataStore","id":"be69916f-5231-4f3c-b1f1-f06fce4bd8d2","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"oDataFilterSoldToParty","value":"11000202","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/Academy2024/datastore","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","Academy2024","datastore"]},"description":"CONSOLUT_LEARN_ACADEMY_DATASTORE\r\n\r\n"},"response":[],"uid":"39579054-be69916f-5231-4f3c-b1f1-f06fce4bd8d2"},{"name":"DataStore_SalesOrder","id":"9c0a0b90-fae2-4c50-85de-5a38603b8e2a","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"POST","header":[{"key":"emailTo","value":"dionysia.papadopoulou@consolut.com","type":"text"}],"body":{"mode":"raw","raw":"{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"1\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"3\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n\r\n \r\n","options":{"raw":{"language":"json"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/createSalesOrderFinal/DataStore","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","createSalesOrderFinal","DataStore"]},"description":"consolut_learn_drp_createrSalesOrderFinal_DataStore"},"response":[],"uid":"39579054-9c0a0b90-fae2-4c50-85de-5a38603b8e2a"},{"name":"getDataStoreMaterials","id":"82cf97d5-07c4-478b-a085-db8c6dc588b1","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/handle/getDataStore","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","handle","getDataStore"]}},"response":[],"uid":"39579054-82cf97d5-07c4-478b-a085-db8c6dc588b1"},{"name":"getMaterialDetails_DataStore","id":"46e7f7b2-ac41-47eb-a04c-cab0df8bb111","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"Material","value":"MZ-FG-M550","type":"text"},{"key":"SalesOrganization","value":"1790","type":"text"},{"key":"Price","value":"112677.00 USD","type":"text"},{"key":"CreatedAt","value":"23.01.05","type":"text"},{"key":"Action","value":"EDIT","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/getMaterialDetails/DataStore","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","getMaterialDetails","DataStore"]},"description":"•\tAdd, edit or delete the received material from the datastore entry. \r\no\tControl which action should be performed by a header.\r\no\tIf the material exists already, edit the existing entry.\r\n"},"response":[],"uid":"39579054-46e7f7b2-ac41-47eb-a04c-cab0df8bb111"},{"name":"ProcessDirect","id":"bc32f37f-4826-4e98-bd32-5fb59d57509f","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"SalesOrder","value":"1996","type":"text"},{"key":"Name","value":"dioni","type":"text"},{"key":"Surname","value":"papadopoulou","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/processDirect","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","processDirect"]},"description":"An iFlow that calls another iFlow"},"response":[],"uid":"39579054-bc32f37f-4826-4e98-bd32-5fb59d57509f"},{"name":"BusinessPartner","id":"79f59cde-da3b-463e-816d-f40a6d718041","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"BusinessPartner","value":"67","type":"text"}],"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BusinessPartner","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","BusinessPartner"]},"description":"Task 1 about finding a BP that has inserted in the header of the body , searching for it and appear all the data "},"response":[],"uid":"39579054-79f59cde-da3b-463e-816d-f40a6d718041"},{"name":"Create Sales Order","id":"136f6ca0-028d-41e1-bf38-78224a6618ef","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"body":{"mode":"raw","raw":"{\r\n    \"A_SalesOrderType\": {\r\n        \"SalesOrderType\": \"OR\",\r\n        \"SalesOrganization\": \"1710\",\r\n        \"DistributionChannel\": \"10\",\r\n        \"OrganizationDivision\": \"00\",\r\n        \"SoldToParty\": \"17100002\",\r\n        \"PurchaseOrderByCustomer\": \"Test\",\r\n        \"to_Item\": {\r\n            \"A_SalesOrderItemType\": [\r\n                {\r\n                    \"SalesOrderItem\": \"10\",\r\n                    \"SalesOrderItemCategory\": \"TAN\",\r\n                    \"PurchaseOrderByCustomer\": \"17100006\",\r\n                    \"Material\": \"MZ-FG-M525\",\r\n                    \"RequestedQuantity\": \"1\",\r\n                    \"TransactionCurrency\": \"USD\",\r\n                    \"NetAmount\": \"112677.00\",\r\n                    \"TaxAmount\": \"0\"\r\n                },\r\n                {\r\n                    \"SalesOrderItem\": \"20\",\r\n                    \"SalesOrderItemCategory\": \"TAN\",\r\n                    \"PurchaseOrderByCustomer\": \"17100006\",\r\n                    \"Material\": \"MZ-FG-M550\",\r\n                    \"RequestedQuantity\": \"1\",\r\n                    \"TransactionCurrency\": \"USD\",\r\n                    \"NetAmount\": \"26000\",\r\n                    \"TaxAmount\": \"0\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}\r\n","options":{"raw":{"language":"json"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/createSalesOrder","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","createSalesOrder"]}},"response":[],"uid":"39579054-136f6ca0-028d-41e1-bf38-78224a6618ef"},{"name":"Sales Order Error Handling","id":"ab20cd98-d006-4fe9-9fb9-057453a99ad6","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[{"key":"Testing","value":"XIXIXIXIXIXIXI ","type":"text"}],"body":{"mode":"raw","raw":"{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"1\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"3\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}","options":{"raw":{"language":"xml"}}},"url":{"raw":"https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/CSO/ErrorHandling/copy","protocol":"https","host":["integration-7dvs6622","it-cpi005-rt","cfapps","eu20","hana","ondemand","com"],"path":["http","consolut","learn","DRP","CSO","ErrorHandling","copy"]}},"response":[],"uid":"39579054-ab20cd98-d006-4fe9-9fb9-057453a99ad6"},{"name":"workflowErrorNotification","id":"eeeb4f30-af17-4d60-8d3c-ad55e96c00eb","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":""}},"response":[],"uid":"39579054-eeeb4f30-af17-4d60-8d3c-ad55e96c00eb"},{"name":"pass camel","id":"3b553255-8455-4099-9ce0-82ec4159d87e","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":""}},"response":[],"uid":"39579054-3b553255-8455-4099-9ce0-82ec4159d87e"}],"auth":{"type":"oauth2","oauth2":[{"key":"accessToken","value":"eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vaW50ZWdyYXRpb24tN2R2czY2MjIuYXV0aGVudGljYXRpb24uZXUyMC5oYW5hLm9uZGVtYW5kLmNvbS90b2tlbl9rZXlzIiwia2lkIjoiZGVmYXVsdC1qd3Qta2V5LTE1ODk3ODIyNTIiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazUzQWhHMU1hcmhPQnc4Y3A4NURZVnBleVZCR2VNOUF1RjF1bmlacEZzTT0ifQ.eyJqdGkiOiIwYTM2MzhhYzcxOTI0NWUzOGYyMTJhMjJlMDRlOGQ1YiIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiNGE3MDQ2OC01OWZjLTRiODUtYjU5MC00YzEzNjY1YThmNTYiLCJ6ZG4iOiJpbnRlZ3JhdGlvbi03ZHZzNjYyMiIsInNlcnZpY2VpbnN0YW5jZWlkIjoiZjYxNzVmMjQtMzA0YS00ZDgyLTgxYzMtMDc2M2EyNzZiZjFiIn0sInN1YiI6InNiLWY2MTc1ZjI0LTMwNGEtNGQ4Mi04MWMzLTA3NjNhMjc2YmYxYiFiNjAyNnxpdC1ydC1pbnRlZ3JhdGlvbi03ZHZzNjYyMiFiMjU5IiwiYXV0aG9yaXRpZXMiOlsidWFhLnJlc291cmNlIiwiaXQtcnQtaW50ZWdyYXRpb24tN2R2czY2MjIhYjI1OS5FU0JNZXNzYWdpbmcuc2VuZCJdLCJzY29wZSI6WyJpdC1ydC1pbnRlZ3JhdGlvbi03ZHZzNjYyMiFiMjU5LkVTQk1lc3NhZ2luZy5zZW5kIiwidWFhLnJlc291cmNlIl0sImNsaWVudF9pZCI6InNiLWY2MTc1ZjI0LTMwNGEtNGQ4Mi04MWMzLTA3NjNhMjc2YmYxYiFiNjAyNnxpdC1ydC1pbnRlZ3JhdGlvbi03ZHZzNjYyMiFiMjU5IiwiY2lkIjoic2ItZjYxNzVmMjQtMzA0YS00ZDgyLTgxYzMtMDc2M2EyNzZiZjFiIWI2MDI2fGl0LXJ0LWludGVncmF0aW9uLTdkdnM2NjIyIWIyNTkiLCJhenAiOiJzYi1mNjE3NWYyNC0zMDRhLTRkODItODFjMy0wNzYzYTI3NmJmMWIhYjYwMjZ8aXQtcnQtaW50ZWdyYXRpb24tN2R2czY2MjIhYjI1OSIsImdyYW50X3R5cGUiOiJjbGllbnRfY3JlZGVudGlhbHMiLCJyZXZfc2lnIjoiOGFkZGQ5MDIiLCJpYXQiOjE3MzAyMTAzMDIsImV4cCI6MTczMDIxMzkwMiwiaXNzIjoiaHR0cHM6Ly9pbnRlZ3JhdGlvbi03ZHZzNjYyMi5hdXRoZW50aWNhdGlvbi5ldTIwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjRhNzA0NjgtNTlmYy00Yjg1LWI1OTAtNGMxMzY2NWE4ZjU2IiwiYXVkIjpbInNiLWY2MTc1ZjI0LTMwNGEtNGQ4Mi04MWMzLTA3NjNhMjc2YmYxYiFiNjAyNnxpdC1ydC1pbnRlZ3JhdGlvbi03ZHZzNjYyMiFiMjU5IiwidWFhIiwiaXQtcnQtaW50ZWdyYXRpb24tN2R2czY2MjIhYjI1OS5FU0JNZXNzYWdpbmciXX0.kSfzDC6qZ_vg3rIfZmGmHLv2ewQo6-n0yCkWkYY5CM_HuaZK0akb_T1bGww-NMnH-9TI5V6OnGyy6tx1lLnU-LJ43Pgp_UYqns-PMShi438sPWiKngEnfDnHWhnPinwK1k1gx_V3sSzcBGgCNtRlYaRM2ycMZ1e0-9tRPWGFVtf5NTP_SJXFcoIeOpqLveZEvfCWhWuCfuR1wVtl9BI-Fg6FyeNPkSrzROuQ-jNvyjMzV6nZAYt8V9ZIxs-jQkZmY6R61DkGG-v43YYYB--wULz-H9FEaFYzm4l6WZ_7B5DFo3QzXTbplllrAGgP_IjvRJtjwZ427teftSj_iD3oRg","type":"string"},{"key":"tokenType","value":"bearer","type":"string"},{"key":"addTokenTo","value":"header","type":"string"}]},"event":[{"listen":"prerequest","script":{"id":"db9c61ba-ef7a-4bb1-9a67-24ad9e6dae31","type":"text/javascript","exec":[""]}},{"listen":"test","script":{"id":"c8692bd6-aaee-4168-aa92-fcea890f2448","type":"text/javascript","exec":[""]}}]}}
+{
+  "collection": {
+    "info": {
+      "_postman_id": "83f54cd5-6d8f-4317-87bb-1c7f68ef47d5",
+      "name": "SAP Integration Suite DRP (github)",
+      "description": "A new Collection !!",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-11T16:11:12.000Z",
+      "createdAt": "2024-11-08T13:24:52.000Z",
+      "lastUpdatedBy": "39579054",
+      "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
+    },
+    "item": [
+      {
+        "name": "example 01 drp",
+        "id": "9fe64e9b-c76f-47b3-a9ae-889e40b0ab49",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "FirstName",
+              "value": "SUPER",
+              "type": "text"
+            },
+            {
+              "key": "LastName",
+              "value": "MARIO",
+              "type": "text"
+            },
+            {
+              "key": "BirthDate",
+              "value": "20-9-1996",
+              "type": "text"
+            },
+            {
+              "key": "hobbies",
+              "value": "video games; gym; reading; hiking; driving",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example01",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "example01"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-9fe64e9b-c76f-47b3-a9ae-889e40b0ab49"
+      },
+      {
+        "name": "EXAMPLE 01",
+        "id": "e188d4a2-b270-4b32-b14c-57e4dc6216aa",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrganization",
+              "value": "1710",
+              "type": "text"
+            },
+            {
+              "key": "Price",
+              "value": "112677.00 USD",
+              "type": "text"
+            },
+            {
+              "key": "CreatedAt",
+              "value": "23.01.05",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "<Material>MZ-FG-M550</Material>\r\n\r\n\r\n\r\n"
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/getMaterialDetails",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "getMaterialDetails"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-e188d4a2-b270-4b32-b14c-57e4dc6216aa"
+      },
+      {
+        "name": "REQUEST TASK 2 (with oDATA SERVICE)",
+        "id": "de5a3e94-ca4a-4283-8233-ca03b471eddb",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrder",
+              "value": "9000",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example02",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "example02"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-de5a3e94-ca4a-4283-8233-ca03b471eddb"
+      },
+      {
+        "name": "EXAMPLE 03",
+        "id": "a3e31325-6f01-4bdc-9d76-c35661aa71e2",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrderNumber",
+              "value": "5600",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example03",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "example03"
+            ],
+            "query": [
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-a3e31325-6f01-4bdc-9d76-c35661aa71e2"
+      },
+      {
+        "name": "EXAMPLE 04",
+        "id": "9de3113d-7083-424a-9502-93cb94db82b1",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrderNumber",
+              "value": "6448",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>MZ-FG-M525\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example04",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "example04"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-9de3113d-7083-424a-9502-93cb94db82b1"
+      },
+      {
+        "name": "bp 1",
+        "id": "9f784b02-63d0-4624-a675-3ba2bca1b4fe",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "BusinessPartner",
+              "value": "173000001",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BP1",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "BP1"
+            ],
+            "query": [
+              {
+                "key": "BusinessPartner",
+                "value": "17411710",
+                "disabled": true
+              }
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-9f784b02-63d0-4624-a675-3ba2bca1b4fe"
+      },
+      {
+        "name": "EXAMPLE 05",
+        "id": "c78cea68-e8e4-428b-9dcb-1ea257681b54",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example05",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "example05"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-c78cea68-e8e4-428b-9dcb-1ea257681b54"
+      },
+      {
+        "name": "TASK2-DAY2",
+        "id": "120a6dab-cf64-4f36-b086-97209a4b85b4",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "BusinessPartner",
+              "value": "",
+              "type": "text",
+              "disabled": true
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BP/task2\n",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "BP",
+              "task2\n"
+            ]
+          },
+          "description": "2) Create another iflow, which retrieves multiple business partners\r\n2.1) We must retrieve BP that have been created during 2020 or later\r\nWe need to fetch the first 30 entries, not every single entry\r\nSelect all available fields on level 0\r\n2.2) Convert the output body into JSON. Also use the appropriate header to define that we are using this output.\r\n"
+        },
+        "response": [],
+        "uid": "39579054-120a6dab-cf64-4f36-b086-97209a4b85b4"
+      },
+      {
+        "name": "TASK3-DAY 2",
+        "id": "581b55d4-f1f1-47b2-8554-6382ee8de3e0",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BP/task3?BusinessPartner=BP1010",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "BP",
+              "task3"
+            ],
+            "query": [
+              {
+                "key": "BusinessPartner",
+                "value": "BP1010"
+              }
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-581b55d4-f1f1-47b2-8554-6382ee8de3e0"
+      },
+      {
+        "name": "example 04 local call",
+        "id": "884dce39-94c0-4585-a9b5-ce749e3920b3",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrderNumber",
+              "value": "2325",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/drp/example04/local/process?SalesOrderNumber=1232",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "drp",
+              "example04",
+              "local",
+              "process"
+            ],
+            "query": [
+              {
+                "key": "SalesOrderNumber",
+                "value": "1232"
+              }
+            ]
+          },
+          "description": "adding a new local call"
+        },
+        "response": [],
+        "uid": "39579054-884dce39-94c0-4585-a9b5-ce749e3920b3"
+      },
+      {
+        "name": "EXAMPLE 08",
+        "id": "dfc2d525-d445-40ac-b26c-f6fb31aa9cbc",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrder",
+              "value": "9425",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/AS/example08?SalesOrder=6373",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "AS",
+              "example08"
+            ],
+            "query": [
+              {
+                "key": "SalesOrder",
+                "value": "6373"
+              }
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-dfc2d525-d445-40ac-b26c-f6fb31aa9cbc"
+      },
+      {
+        "name": "Externalized Parameters",
+        "id": "ec8001a6-c3b2-4f6a-a6e8-4ba14d0d3a66",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/testing/iflow/drp",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "testing",
+              "iflow",
+              "drp"
+            ]
+          },
+          "description": "Request using externalized parameters\r\n\r\ni-flow: consolut_learn_testing_iflow_drp"
+        },
+        "response": [],
+        "uid": "39579054-ec8001a6-c3b2-4f6a-a6e8-4ba14d0d3a66"
+      },
+      {
+        "name": "BusinessPartnerData",
+        "id": "8b9b5e2c-03b2-4688-abd5-09c5f644cfff",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BusinessPartnerData",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "BusinessPartnerData"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-8b9b5e2c-03b2-4688-abd5-09c5f644cfff"
+      },
+      {
+        "name": "BusinessPartnerDataAddress",
+        "id": "b9b844c0-259c-47b8-b2ed-eb4817829fbd",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BusinessPartnerDataAddress",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "BusinessPartnerDataAddress"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-b9b844c0-259c-47b8-b2ed-eb4817829fbd"
+      },
+      {
+        "name": "send Email",
+        "id": "896dcec6-e071-41f3-94c7-0eea42a1d60c",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "userBP",
+              "value": "\n",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "userBP",
+              "value": "10910010",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/sendEmail",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "sendEmail"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-896dcec6-e071-41f3-94c7-0eea42a1d60c"
+      },
+      {
+        "name": "example 10",
+        "id": "2097c9ea-827b-400c-99b7-4ca997dd958e",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrderNumber",
+              "value": "7700",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/example10",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "example10"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-2097c9ea-827b-400c-99b7-4ca997dd958e"
+      },
+      {
+        "name": "Post SO from Json input",
+        "id": "6d960233-930b-4e5f-9265-44e095bc43ac",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"9\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"10\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n \r\n",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/testingCreateSO",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "testingCreateSO"
+            ]
+          },
+          "description": "εισοδος- αρχειο σε json\r\n-μετατροπη σε xml\r\n-Post -για δημιουργια παραγγελιας"
+        },
+        "response": [],
+        "uid": "39579054-6d960233-930b-4e5f-9265-44e095bc43ac"
+      },
+      {
+        "name": "createSalesOrderFinal",
+        "id": "20eb1927-3fea-4ccc-8ff7-6ed40220deb8",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"1\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"3\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n \r\n",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/createSalesOrderFinal",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "createSalesOrderFinal"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-20eb1927-3fea-4ccc-8ff7-6ed40220deb8"
+      },
+      {
+        "name": "createSalesOrderFinalSendEmail",
+        "id": "96c3a733-3794-4f1d-bee2-175d49eaa0e8",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"9\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"10\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n \r\n",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/createSalesOrderFinal/sendEmail",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "createSalesOrderFinal",
+              "sendEmail"
+            ]
+          },
+          "description": "DAY 4-TASK2B (NIKOLETA'S)\r\n-Json input\r\n-check bp if is soldtoparty\r\n-check given requestedquantities\r\n-based on them , create sales order\r\n-or send email"
+        },
+        "response": [],
+        "uid": "39579054-96c3a733-3794-4f1d-bee2-175d49eaa0e8"
+      },
+      {
+        "name": "ThrowExceptions",
+        "id": "9a8f09b6-96f1-4261-bda0-922701c6b7eb",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrderNumber",
+              "value": "1996",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>MZ-FG-M525\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/ThrowExceptions",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "ThrowExceptions"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-9a8f09b6-96f1-4261-bda0-922701c6b7eb"
+      },
+      {
+        "name": "Attachments",
+        "id": "4e341396-bc2d-46e1-9a4b-f9be5d1fd861",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrderNumber",
+              "value": "32455",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "<A_SalesOrder>\r\n    <A_SalesOrderType>\r\n        <SalesOrderType>OR</SalesOrderType>\r\n        <SalesOrganization>1710</SalesOrganization>\r\n        <DistributionChannel>10</DistributionChannel>\r\n        <OrganizationDivision>00</OrganizationDivision>\r\n        <SoldToParty>17100006</SoldToParty>\r\n        <PurchaseOrderByCustomer>Test</PurchaseOrderByCustomer>MZ-FG-M525\r\n        <to_Item>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>10</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M525</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>112677.00</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n            <A_SalesOrderItemType>\r\n                <SalesOrderItem>20</SalesOrderItem>\r\n                <SalesOrderItemCategory>TAN</SalesOrderItemCategory>\r\n                <PurchaseOrderByCustomer>17100006</PurchaseOrderByCustomer>\r\n                <Material>MZ-FG-M550</Material>\r\n                <RequestedQuantity>1</RequestedQuantity>\r\n                <TransactionCurrency>USD</TransactionCurrency>\r\n                <NetAmount>26000</NetAmount>\r\n                <TaxAmount>0</TaxAmount>\r\n            </A_SalesOrderItemType>\r\n        </to_Item>\r\n    </A_SalesOrderType>\r\n</A_SalesOrder>",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/Attachments",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "Attachments"
+            ]
+          },
+          "description": "βαζουμε 1 script για να δημιουργησουμε attachments. Με αυτο τον τροπο εχουμε περισσοτερες πληροφοριες για το iflow χωρις να χρειαζεται συνεχεια να κανουμε το trace : ON"
+        },
+        "response": [],
+        "uid": "39579054-4e341396-bc2d-46e1-9a4b-f9be5d1fd861"
+      },
+      {
+        "name": "DataStore",
+        "id": "be69916f-5231-4f3c-b1f1-f06fce4bd8d2",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "oDataFilterSoldToParty",
+              "value": "11000202",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/Academy2024/datastore",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "Academy2024",
+              "datastore"
+            ]
+          },
+          "description": "CONSOLUT_LEARN_ACADEMY_DATASTORE\r\n\r\n"
+        },
+        "response": [],
+        "uid": "39579054-be69916f-5231-4f3c-b1f1-f06fce4bd8d2"
+      },
+      {
+        "name": "DataStore_SalesOrder",
+        "id": "9c0a0b90-fae2-4c50-85de-5a38603b8e2a",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "emailTo",
+              "value": "dionysia.papadopoulou@consolut.com",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"1\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"3\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n\r\n \r\n",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/createSalesOrderFinal/DataStore",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "createSalesOrderFinal",
+              "DataStore"
+            ]
+          },
+          "description": "consolut_learn_drp_createrSalesOrderFinal_DataStore"
+        },
+        "response": [],
+        "uid": "39579054-9c0a0b90-fae2-4c50-85de-5a38603b8e2a"
+      },
+      {
+        "name": "getDataStoreMaterials",
+        "id": "82cf97d5-07c4-478b-a085-db8c6dc588b1",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/handle/getDataStore",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "handle",
+              "getDataStore"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-82cf97d5-07c4-478b-a085-db8c6dc588b1"
+      },
+      {
+        "name": "getMaterialDetails_DataStore",
+        "id": "46e7f7b2-ac41-47eb-a04c-cab0df8bb111",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Material",
+              "value": "MZ-FG-M550",
+              "type": "text"
+            },
+            {
+              "key": "SalesOrganization",
+              "value": "1790",
+              "type": "text"
+            },
+            {
+              "key": "Price",
+              "value": "112677.00 USD",
+              "type": "text"
+            },
+            {
+              "key": "CreatedAt",
+              "value": "23.01.05",
+              "type": "text"
+            },
+            {
+              "key": "Action",
+              "value": "EDIT",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/getMaterialDetails/DataStore",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "getMaterialDetails",
+              "DataStore"
+            ]
+          },
+          "description": "•\tAdd, edit or delete the received material from the datastore entry. \r\no\tControl which action should be performed by a header.\r\no\tIf the material exists already, edit the existing entry.\r\n"
+        },
+        "response": [],
+        "uid": "39579054-46e7f7b2-ac41-47eb-a04c-cab0df8bb111"
+      },
+      {
+        "name": "ProcessDirect",
+        "id": "bc32f37f-4826-4e98-bd32-5fb59d57509f",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "SalesOrder",
+              "value": "1996",
+              "type": "text"
+            },
+            {
+              "key": "Name",
+              "value": "dioni",
+              "type": "text"
+            },
+            {
+              "key": "Surname",
+              "value": "papadopoulou",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/processDirect",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "processDirect"
+            ]
+          },
+          "description": "An iFlow that calls another iFlow"
+        },
+        "response": [],
+        "uid": "39579054-bc32f37f-4826-4e98-bd32-5fb59d57509f"
+      },
+      {
+        "name": "BusinessPartner",
+        "id": "79f59cde-da3b-463e-816d-f40a6d718041",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "BusinessPartner",
+              "value": "67",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/BusinessPartner",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "BusinessPartner"
+            ]
+          },
+          "description": "Task 1 about finding a BP that has inserted in the header of the body , searching for it and appear all the data "
+        },
+        "response": [],
+        "uid": "39579054-79f59cde-da3b-463e-816d-f40a6d718041"
+      },
+      {
+        "name": "Create Sales Order",
+        "id": "136f6ca0-028d-41e1-bf38-78224a6618ef",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"A_SalesOrderType\": {\r\n        \"SalesOrderType\": \"OR\",\r\n        \"SalesOrganization\": \"1710\",\r\n        \"DistributionChannel\": \"10\",\r\n        \"OrganizationDivision\": \"00\",\r\n        \"SoldToParty\": \"17100002\",\r\n        \"PurchaseOrderByCustomer\": \"Test\",\r\n        \"to_Item\": {\r\n            \"A_SalesOrderItemType\": [\r\n                {\r\n                    \"SalesOrderItem\": \"10\",\r\n                    \"SalesOrderItemCategory\": \"TAN\",\r\n                    \"PurchaseOrderByCustomer\": \"17100006\",\r\n                    \"Material\": \"MZ-FG-M525\",\r\n                    \"RequestedQuantity\": \"1\",\r\n                    \"TransactionCurrency\": \"USD\",\r\n                    \"NetAmount\": \"112677.00\",\r\n                    \"TaxAmount\": \"0\"\r\n                },\r\n                {\r\n                    \"SalesOrderItem\": \"20\",\r\n                    \"SalesOrderItemCategory\": \"TAN\",\r\n                    \"PurchaseOrderByCustomer\": \"17100006\",\r\n                    \"Material\": \"MZ-FG-M550\",\r\n                    \"RequestedQuantity\": \"1\",\r\n                    \"TransactionCurrency\": \"USD\",\r\n                    \"NetAmount\": \"26000\",\r\n                    \"TaxAmount\": \"0\"\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}\r\n",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/createSalesOrder",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "createSalesOrder"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-136f6ca0-028d-41e1-bf38-78224a6618ef"
+      },
+      {
+        "name": "Sales Order Error Handling",
+        "id": "ab20cd98-d006-4fe9-9fb9-057453a99ad6",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Testing",
+              "value": "XIXIXIXIXIXIXI ",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"A_SalesOrder\": {\r\n        \"A_SalesOrderType\": {\r\n            \"SalesOrderType\": \"OR\",\r\n            \"SalesOrganization\": \"1710\",\r\n            \"DistributionChannel\": \"10\",\r\n            \"OrganizationDivision\": \"00\",\r\n            \"SoldToParty\": \"17100006\",\r\n            \"PurchaseOrderByCustomer\": \"Test\",\r\n            \"to_Item\": {\r\n                \"A_SalesOrderItemType\": [\r\n                    {\r\n                        \"SalesOrderItem\": \"10\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M525\",\r\n                        \"RequestedQuantity\": \"1\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"112677.00\",\r\n                        \"TaxAmount\": \"0\"\r\n                    },\r\n                    {\r\n                        \"SalesOrderItem\": \"20\",\r\n                        \"SalesOrderItemCategory\": \"TAN\",\r\n                        \"PurchaseOrderByCustomer\": \"17100006\",\r\n                        \"Material\": \"MZ-FG-M550\",\r\n                        \"RequestedQuantity\": \"3\",\r\n                        \"TransactionCurrency\": \"USD\",\r\n                        \"NetAmount\": \"26000\",\r\n                        \"TaxAmount\": \"0\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    }\r\n}",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/CSO/ErrorHandling/copy",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "DRP",
+              "CSO",
+              "ErrorHandling",
+              "copy"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-ab20cd98-d006-4fe9-9fb9-057453a99ad6"
+      },
+      {
+        "name": "workflowErrorNotification",
+        "id": "eeeb4f30-af17-4d60-8d3c-ad55e96c00eb",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": ""
+          }
+        },
+        "response": [],
+        "uid": "39579054-eeeb4f30-af17-4d60-8d3c-ad55e96c00eb"
+      },
+      {
+        "name": "pass camel",
+        "id": "3b553255-8455-4099-9ce0-82ec4159d87e",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": ""
+          }
+        },
+        "response": [],
+        "uid": "39579054-3b553255-8455-4099-9ce0-82ec4159d87e"
+      }
+    ],
+    "auth": {
+      "type": "oauth2",
+      "oauth2": [
+        {
+          "key": "accessToken",
+          "value": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vaW50ZWdyYXRpb24tN2R2czY2MjIuYXV0aGVudGljYXRpb24uZXUyMC5oYW5hLm9uZGVtYW5kLmNvbS90b2tlbl9rZXlzIiwia2lkIjoiZGVmYXVsdC1qd3Qta2V5LTE1ODk3ODIyNTIiLCJ0eXAiOiJKV1QiLCJqaWQiOiAiazUzQWhHMU1hcmhPQnc4Y3A4NURZVnBleVZCR2VNOUF1RjF1bmlacEZzTT0ifQ.eyJqdGkiOiIwYTM2MzhhYzcxOTI0NWUzOGYyMTJhMjJlMDRlOGQ1YiIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiJiNGE3MDQ2OC01OWZjLTRiODUtYjU5MC00YzEzNjY1YThmNTYiLCJ6ZG4iOiJpbnRlZ3JhdGlvbi03ZHZzNjYyMiIsInNlcnZpY2VpbnN0YW5jZWlkIjoiZjYxNzVmMjQtMzA0YS00ZDgyLTgxYzMtMDc2M2EyNzZiZjFiIn0sInN1YiI6InNiLWY2MTc1ZjI0LTMwNGEtNGQ4Mi04MWMzLTA3NjNhMjc2YmYxYiFiNjAyNnxpdC1ydC1pbnRlZ3JhdGlvbi03ZHZzNjYyMiFiMjU5IiwiYXV0aG9yaXRpZXMiOlsidWFhLnJlc291cmNlIiwiaXQtcnQtaW50ZWdyYXRpb24tN2R2czY2MjIhYjI1OS5FU0JNZXNzYWdpbmcuc2VuZCJdLCJzY29wZSI6WyJpdC1ydC1pbnRlZ3JhdGlvbi03ZHZzNjYyMiFiMjU5LkVTQk1lc3NhZ2luZy5zZW5kIiwidWFhLnJlc291cmNlIl0sImNsaWVudF9pZCI6InNiLWY2MTc1ZjI0LTMwNGEtNGQ4Mi04MWMzLTA3NjNhMjc2YmYxYiFiNjAyNnxpdC1ydC1pbnRlZ3JhdGlvbi03ZHZzNjYyMiFiMjU5IiwiY2lkIjoic2ItZjYxNzVmMjQtMzA0YS00ZDgyLTgxYzMtMDc2M2EyNzZiZjFiIWI2MDI2fGl0LXJ0LWludGVncmF0aW9uLTdkdnM2NjIyIWIyNTkiLCJhenAiOiJzYi1mNjE3NWYyNC0zMDRhLTRkODItODFjMy0wNzYzYTI3NmJmMWIhYjYwMjZ8aXQtcnQtaW50ZWdyYXRpb24tN2R2czY2MjIhYjI1OSIsImdyYW50X3R5cGUiOiJjbGllbnRfY3JlZGVudGlhbHMiLCJyZXZfc2lnIjoiOGFkZGQ5MDIiLCJpYXQiOjE3MzAyMTAzMDIsImV4cCI6MTczMDIxMzkwMiwiaXNzIjoiaHR0cHM6Ly9pbnRlZ3JhdGlvbi03ZHZzNjYyMi5hdXRoZW50aWNhdGlvbi5ldTIwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiYjRhNzA0NjgtNTlmYy00Yjg1LWI1OTAtNGMxMzY2NWE4ZjU2IiwiYXVkIjpbInNiLWY2MTc1ZjI0LTMwNGEtNGQ4Mi04MWMzLTA3NjNhMjc2YmYxYiFiNjAyNnxpdC1ydC1pbnRlZ3JhdGlvbi03ZHZzNjYyMiFiMjU5IiwidWFhIiwiaXQtcnQtaW50ZWdyYXRpb24tN2R2czY2MjIhYjI1OS5FU0JNZXNzYWdpbmciXX0.kSfzDC6qZ_vg3rIfZmGmHLv2ewQo6-n0yCkWkYY5CM_HuaZK0akb_T1bGww-NMnH-9TI5V6OnGyy6tx1lLnU-LJ43Pgp_UYqns-PMShi438sPWiKngEnfDnHWhnPinwK1k1gx_V3sSzcBGgCNtRlYaRM2ycMZ1e0-9tRPWGFVtf5NTP_SJXFcoIeOpqLveZEvfCWhWuCfuR1wVtl9BI-Fg6FyeNPkSrzROuQ-jNvyjMzV6nZAYt8V9ZIxs-jQkZmY6R61DkGG-v43YYYB--wULz-H9FEaFYzm4l6WZ_7B5DFo3QzXTbplllrAGgP_IjvRJtjwZ427teftSj_iD3oRg",
+          "type": "string"
+        },
+        {
+          "key": "tokenType",
+          "value": "bearer",
+          "type": "string"
+        },
+        {
+          "key": "addTokenTo",
+          "value": "header",
+          "type": "string"
+        }
+      ]
+    },
+    "event": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "id": "db9c61ba-ef7a-4bb1-9a67-24ad9e6dae31",
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "id": "c8692bd6-aaee-4168-aa92-fcea890f2448",
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      }
+    ]
+  }
+}
