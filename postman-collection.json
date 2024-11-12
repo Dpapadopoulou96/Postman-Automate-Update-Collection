@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-12T09:29:08.000Z",
+      "updatedAt": "2024-11-12T10:49:54.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1340,6 +1340,19 @@
         },
         "response": [],
         "uid": "39579054-3b553255-8455-4099-9ce0-82ec4159d87e"
+      },
+      {
+        "name": "getOCRFromDataStore",
+        "id": "ad5b09cd-fe6c-4af1-bc92-a2985e88ee23",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": []
+        },
+        "response": [],
+        "uid": "39579054-ad5b09cd-fe6c-4af1-bc92-a2985e88ee23"
       }
     ],
     "auth": {
