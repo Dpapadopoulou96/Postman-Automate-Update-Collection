@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-12T10:49:54.000Z",
+      "updatedAt": "2024-11-12T13:38:02.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1348,8 +1348,53 @@
           "disableBodyPruning": true
         },
         "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "password",
+                "value": "41d83472-1eea-4235-a437-731a9b9bca8b$-dEazWwYrzf31674qIpBfLZ3gfiT1uTuS9m7rwCnOPc=",
+                "type": "string"
+              },
+              {
+                "key": "username",
+                "value": "sb-7ee7526f-eabb-43e1-8408-37695aff5e9c!b6026|it-rt-integration-7dvs6622!b259",
+                "type": "string"
+              }
+            ]
+          },
           "method": "GET",
-          "header": []
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"Documents\": [\r\n    {\r\n        \"ApplicationID\": \"00000000000126\",\r\n        \"JobId\": \"5213bdf5-575f-48ac-bb92-84c84bd3cf4b\"\r\n    },\r\n    {\r\n        \"ApplicationID\": \"00000000000127\",\r\n        \"JobId\": \"a5569eec-9532-4846-9452-a631276355b8\"\r\n    },\r\n    {\r\n        \"ApplicationID\": \"10000000000128\",\r\n        \"JobId\": \"6c8cc4dc-21ac-4c5d-86af-9328f8203f9d\"\r\n    }\r\n]\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/finance/IIA/getOCRFromDataStore/copy",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "finance",
+              "IIA",
+              "getOCRFromDataStore",
+              "copy"
+            ]
+          }
         },
         "response": [],
         "uid": "39579054-ad5b09cd-fe6c-4af1-bc92-a2985e88ee23"
