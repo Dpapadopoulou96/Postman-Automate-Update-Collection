@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-12-16T09:26:51.000Z",
+      "updatedAt": "2025-01-17T11:30:58.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1372,11 +1372,26 @@
           "disableBodyPruning": true
         },
         "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "password",
+                "value": "41d83472-1eea-4235-a437-731a9b9bca8b$-dEazWwYrzf31674qIpBfLZ3gfiT1uTuS9m7rwCnOPc=",
+                "type": "string"
+              },
+              {
+                "key": "username",
+                "value": "sb-7ee7526f-eabb-43e1-8408-37695aff5e9c!b6026|it-rt-integration-7dvs6622!b259",
+                "type": "string"
+              }
+            ]
+          },
           "method": "GET",
           "header": [
             {
               "key": "attachID",
-              "value": "002D",
+              "value": "001",
               "type": "text"
             },
             {
@@ -1386,7 +1401,7 @@
             },
             {
               "key": "iiaCorrelationId",
-              "value": "AGdcTIdc8jO_1XvMkUqrrtmOoniq",
+              "value": "AGeKPNKpNRhGk795TWLYBpv-gz2O",
               "type": "text"
             }
           ],
@@ -1400,7 +1415,7 @@
             }
           },
           "url": {
-            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/DRP/handle/getDataStore",
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/finance/IIA/DSActions/AttachStatus",
             "protocol": "https",
             "host": [
               "integration-7dvs6622",
@@ -1414,10 +1429,10 @@
             "path": [
               "http",
               "consolut",
-              "learn",
-              "DRP",
-              "handle",
-              "getDataStore"
+              "finance",
+              "IIA",
+              "DSActions",
+              "AttachStatus"
             ]
           }
         },
