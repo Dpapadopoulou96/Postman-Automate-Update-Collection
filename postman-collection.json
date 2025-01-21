@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-01-17T11:30:58.000Z",
+      "updatedAt": "2025-01-20T13:48:47.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1366,7 +1366,20 @@
         "uid": "39579054-ad5b09cd-fe6c-4af1-bc92-a2985e88ee23"
       },
       {
-        "name": "DataStoreActions",
+        "name": "custom Header Properties",
+        "id": "f4b7d809-3a3b-42e8-8233-256d1d104931",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": []
+        },
+        "response": [],
+        "uid": "39579054-f4b7d809-3a3b-42e8-8233-256d1d104931"
+      },
+      {
+        "name": "attachment status",
         "id": "82cf97d5-07c4-478b-a085-db8c6dc588b1",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
@@ -1446,6 +1459,21 @@
           "disableBodyPruning": true
         },
         "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "password",
+                "value": "41d83472-1eea-4235-a437-731a9b9bca8b$-dEazWwYrzf31674qIpBfLZ3gfiT1uTuS9m7rwCnOPc=",
+                "type": "string"
+              },
+              {
+                "key": "username",
+                "value": "sb-7ee7526f-eabb-43e1-8408-37695aff5e9c!b6026|it-rt-integration-7dvs6622!b259",
+                "type": "string"
+              }
+            ]
+          },
           "method": "GET",
           "header": [
             {
@@ -1470,7 +1498,7 @@
             }
           ],
           "url": {
-            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/drp/deleteAtt",
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/finance/IIA/DSActions/DeleteSpecAtt",
             "protocol": "https",
             "host": [
               "integration-7dvs6622",
@@ -1484,27 +1512,15 @@
             "path": [
               "http",
               "consolut",
-              "learn",
-              "drp",
-              "deleteAtt"
+              "finance",
+              "IIA",
+              "DSActions",
+              "DeleteSpecAtt"
             ]
           }
         },
         "response": [],
         "uid": "39579054-3abbd97b-ce55-4295-899f-8e0f53612528"
-      },
-      {
-        "name": "custom Header Properties",
-        "id": "f4b7d809-3a3b-42e8-8233-256d1d104931",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "method": "GET",
-          "header": []
-        },
-        "response": [],
-        "uid": "39579054-f4b7d809-3a3b-42e8-8233-256d1d104931"
       }
     ],
     "auth": {
