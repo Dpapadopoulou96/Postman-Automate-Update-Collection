@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-01-20T13:48:47.000Z",
+      "updatedAt": "2025-01-21T16:04:35.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1521,6 +1521,37 @@
         },
         "response": [],
         "uid": "39579054-3abbd97b-ce55-4295-899f-8e0f53612528"
+      },
+      {
+        "name": "Public Cloud",
+        "id": "eb0aa940-94df-4f17-8f0e-73fbce5b8655",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/API_GLACCOUNTINCHARTOFACCOUNTS_SRV/A_GLAccountInChartOfAccounts\n\n",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "API_GLACCOUNTINCHARTOFACCOUNTS_SRV",
+              "A_GLAccountInChartOfAccounts\n\n"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-eb0aa940-94df-4f17-8f0e-73fbce5b8655"
       }
     ],
     "auth": {
