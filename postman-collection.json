@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-01-22T12:35:41.000Z",
+      "updatedAt": "2025-01-22T16:17:36.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1505,12 +1505,12 @@
             "basic": [
               {
                 "key": "password",
-                "value": "bc1a9e4d-379d-49c6-a432-34ae1b20aa96$CeVn6eHqlpJHVC3y2O4X6UGWshqmx8B1J4Wth3IhJWs=",
+                "value": "XrrzqFTnHnLZcSgTr/DtpljXwlyaoF6uRpmiYVTS",
                 "type": "string"
               },
               {
                 "key": "username",
-                "value": "sb-848b2bd2-ec9f-4add-b089-51eff68eda89!b6026|it-rt-integration-7dvs6622!b259",
+                "value": "CPI_INBOUND_USER",
                 "type": "string"
               }
             ]
@@ -1518,7 +1518,37 @@
           "method": "GET",
           "header": [],
           "url": {
-            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/sap/opu/odata/sap/API_GLACCOUNTINCHARTOFACCOUNTS_SRV\n\n",
+            "raw": "https://my404359-api.s4hana.cloud.sap/sap/opu/odata/sap/API_GLACCOUNTLINEITEM",
+            "protocol": "https",
+            "host": [
+              "my404359-api",
+              "s4hana",
+              "cloud",
+              "sap"
+            ],
+            "path": [
+              "sap",
+              "opu",
+              "odata",
+              "sap",
+              "API_GLACCOUNTLINEITEM"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-eb0aa940-94df-4f17-8f0e-73fbce5b8655"
+      },
+      {
+        "name": "iFLOW-PC",
+        "id": "4ebe55b1-7a80-4331-8b5b-e47ddcc5563c",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/drp/fi/postingsRead",
             "protocol": "https",
             "host": [
               "integration-7dvs6622",
@@ -1530,16 +1560,16 @@
               "com"
             ],
             "path": [
-              "sap",
-              "opu",
-              "odata",
-              "sap",
-              "API_GLACCOUNTINCHARTOFACCOUNTS_SRV\n\n"
+              "http",
+              "consolut",
+              "drp",
+              "fi",
+              "postingsRead"
             ]
           }
         },
         "response": [],
-        "uid": "39579054-eb0aa940-94df-4f17-8f0e-73fbce5b8655"
+        "uid": "39579054-4ebe55b1-7a80-4331-8b5b-e47ddcc5563c"
       }
     ],
     "auth": {
