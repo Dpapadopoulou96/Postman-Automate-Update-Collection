@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-01-22T16:17:36.000Z",
+      "updatedAt": "2025-01-24T11:29:35.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1539,7 +1539,7 @@
         "uid": "39579054-eb0aa940-94df-4f17-8f0e-73fbce5b8655"
       },
       {
-        "name": "iFLOW-PC",
+        "name": "PUBLIC_CLOUD-fi_postingsRead",
         "id": "4ebe55b1-7a80-4331-8b5b-e47ddcc5563c",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
@@ -1570,6 +1570,19 @@
         },
         "response": [],
         "uid": "39579054-4ebe55b1-7a80-4331-8b5b-e47ddcc5563c"
+      },
+      {
+        "name": "PUBLIC_CLOUD-Create/Modify G/L Entry",
+        "id": "8b7b30f0-abdf-4eda-8577-d12d92e2418a",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": []
+        },
+        "response": [],
+        "uid": "39579054-8b7b30f0-abdf-4eda-8577-d12d92e2418a"
       }
     ],
     "auth": {
