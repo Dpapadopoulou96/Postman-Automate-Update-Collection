@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-01-24T11:29:35.000Z",
+      "updatedAt": "2025-01-24T14:58:49.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1572,17 +1572,80 @@
         "uid": "39579054-4ebe55b1-7a80-4331-8b5b-e47ddcc5563c"
       },
       {
-        "name": "PUBLIC_CLOUD-Create/Modify G/L Entry",
+        "name": "SOAP-Create/Modify G/L Entry",
         "id": "8b7b30f0-abdf-4eda-8577-d12d92e2418a",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true,
+          "disabledSystemHeaders": {}
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:sfin=\"http://sap.com/xi/SAPSCORE/SFIN\">\r\n    <soapenv:Header/>\r\n    <soapenv:Body>\r\n        <sfin:JournalEntryBulkCreateRequest>\r\n            <MessageHeader>\r\n                <CreationDateTime>2025-01-24T10:29:20.230Z</CreationDateTime>\r\n            </MessageHeader>\r\n            <!--1 or more repetitions:-->\r\n            <JournalEntryCreateRequest>\r\n                <MessageHeader>\r\n                    <CreationDateTime>2025-01-24T10:29:20.230Z</CreationDateTime>\r\n                </MessageHeader>\r\n                <JournalEntry>\r\n                    <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>\r\n                    <OriginalReferenceDocument/>\r\n                    <OriginalReferenceDocumentLogicalSystem/>\r\n                    <BusinessTransactionType>RFBU</BusinessTransactionType>\r\n                    <AccountingDocumentType>KR</AccountingDocumentType>\r\n                    <DocumentReferenceID>123</DocumentReferenceID>\r\n                    <DocumentHeaderText>Tax</DocumentHeaderText>\r\n                    <CreatedByUser>CB9980000079</CreatedByUser>\r\n                    <CompanyCode>DE01</CompanyCode>\r\n                    <DocumentDate>2025-01-24</DocumentDate>\r\n                    <PostingDate>2025-01-24</PostingDate>\r\n                    <TaxDeterminationDate>2025-01-24</TaxDeterminationDate>\r\n                    <Item>\r\n                        <GLAccount>0063001000</GLAccount>\r\n                        <AmountInTransactionCurrency currencyCode=\"EUR\">100</AmountInTransactionCurrency>\r\n                        <DebitCreditCode>S</DebitCreditCode>\r\n                        <Tax>\r\n                            <TaxCode>V1</TaxCode>\r\n                        </Tax>\r\n                        <AccountAssignment>\r\n                            <!--Optional:-->\r\n                            <CostCenter>0010101201</CostCenter>\r\n                        </AccountAssignment>\r\n                    </Item>\r\n                    <Item>\r\n                        <GLAccount>0063001000</GLAccount>\r\n                        <AmountInTransactionCurrency currencyCode=\"EUR\">100</AmountInTransactionCurrency>\r\n                        <DebitCreditCode>S</DebitCreditCode>\r\n                        <Tax>\r\n                            <TaxCode>V1</TaxCode>\r\n                        </Tax>\r\n                        <AccountAssignment>\r\n                            <!--Optional:-->\r\n                            <CostCenter>0010101201</CostCenter>\r\n                        </AccountAssignment>\r\n                    </Item>\r\n                    <CreditorItem>\r\n                        <ReferenceDocumentItem>2</ReferenceDocumentItem>\r\n                        <Creditor>S1030001</Creditor>\r\n                        <AmountInTransactionCurrency currencyCode=\"EUR\">-238</AmountInTransactionCurrency>\r\n                        <DebitCreditCode>H</DebitCreditCode>\r\n                    </CreditorItem>\r\n                    <ProductTaxItem>\r\n                        <TaxCode>V1</TaxCode>\r\n                        <TaxItemClassification>VST</TaxItemClassification>\r\n                        <AmountInTransactionCurrency currencyCode=\"EUR\">38</AmountInTransactionCurrency>\r\n                        <TaxBaseAmountInTransCrcy currencyCode=\"EUR\">200</TaxBaseAmountInTransCrcy>\r\n                    </ProductTaxItem>\r\n                </JournalEntry>\r\n            </JournalEntryCreateRequest>\r\n        </sfin:JournalEntryBulkCreateRequest>\r\n    </soapenv:Body>\r\n</soapenv:Envelope>\r\n",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/cross/drp/createModifyGL",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "cross",
+              "drp",
+              "createModifyGL"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-8b7b30f0-abdf-4eda-8577-d12d92e2418a"
+      },
+      {
+        "name": "New Request",
+        "id": "ced9c20d-1457-4704-8596-69520e973cec",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
         "request": {
           "method": "GET",
-          "header": []
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/cross/drp/getJournalEntries",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "cross",
+              "drp",
+              "getJournalEntries"
+            ]
+          }
         },
         "response": [],
-        "uid": "39579054-8b7b30f0-abdf-4eda-8577-d12d92e2418a"
+        "uid": "39579054-ced9c20d-1457-4704-8596-69520e973cec"
       }
     ],
     "auth": {
