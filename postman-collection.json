@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-01-27T15:09:51.000Z",
+      "updatedAt": "2025-01-28T16:39:53.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1646,6 +1646,19 @@
         },
         "response": [],
         "uid": "39579054-ced9c20d-1457-4704-8596-69520e973cec"
+      },
+      {
+        "name": "VALUE MAPPING",
+        "id": "332bd598-7586-43b8-97af-b17bb9057398",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": []
+        },
+        "response": [],
+        "uid": "39579054-332bd598-7586-43b8-97af-b17bb9057398"
       }
     ],
     "auth": {
