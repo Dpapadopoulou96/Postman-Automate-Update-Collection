@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-01-29T10:45:11.000Z",
+      "updatedAt": "2025-01-31T10:55:22.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1615,39 +1615,6 @@
         "uid": "39579054-8b7b30f0-abdf-4eda-8577-d12d92e2418a"
       },
       {
-        "name": "New Request",
-        "id": "ced9c20d-1457-4704-8596-69520e973cec",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "method": "GET",
-          "header": [],
-          "url": {
-            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/cross/drp/getJournalEntries",
-            "protocol": "https",
-            "host": [
-              "integration-7dvs6622",
-              "it-cpi005-rt",
-              "cfapps",
-              "eu20",
-              "hana",
-              "ondemand",
-              "com"
-            ],
-            "path": [
-              "http",
-              "consolut",
-              "cross",
-              "drp",
-              "getJournalEntries"
-            ]
-          }
-        },
-        "response": [],
-        "uid": "39579054-ced9c20d-1457-4704-8596-69520e973cec"
-      },
-      {
         "name": "VALUE MAPPING",
         "id": "332bd598-7586-43b8-97af-b17bb9057398",
         "protocolProfileBehavior": {
@@ -1679,6 +1646,39 @@
         },
         "response": [],
         "uid": "39579054-332bd598-7586-43b8-97af-b17bb9057398"
+      },
+      {
+        "name": "New Request",
+        "id": "ced9c20d-1457-4704-8596-69520e973cec",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/cross/drp/getJournalEntries",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "cross",
+              "drp",
+              "getJournalEntries"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-ced9c20d-1457-4704-8596-69520e973cec"
       }
     ],
     "auth": {
