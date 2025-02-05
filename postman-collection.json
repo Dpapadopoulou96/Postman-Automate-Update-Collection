@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-02-03T15:41:46.000Z",
+      "updatedAt": "2025-02-05T11:39:09.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1659,12 +1659,57 @@
             {
               "key": "validationID",
               "value": "extraValidation",
-              "type": "text"
+              "type": "text",
+              "disabled": true
             }
           ],
           "body": {
             "mode": "raw",
-            "raw": "\r\n{\"BusinessPartner\":\"1000352\",\"CompanyCode\":\"1010\"}",
+            "raw": "<?xml version='1.0' encoding='UTF-8'?>\r\n<p1:JournalEntryBulkCreateRequest \r\n    xmlns:p1=\"http://sap.com/xi/SAPSCORE/SFIN\" \r\n    xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\">\r\n    <MessageHeader>\r\n        <CreationDateTime>2025-01-31T11:42:00Z</CreationDateTime>\r\n        <TestDataIndicator>false</TestDataIndicator>\r\n        <ReconciliationIndicator>true</ReconciliationIndicator>\r\n    </MessageHeader>\r\n    <JournalEntryCreateRequest>\r\n        <MessageHeader>\r\n            <CreationDateTime>2025-01-31T11:42:00Z</CreationDateTime>\r\n            <TestDataIndicator>true</TestDataIndicator>\r\n            <ReconciliationIndicator>true</ReconciliationIndicator>\r\n        </MessageHeader>\r\n        <JournalEntry>\r\n            <CreatedByUser>CB9980000079</CreatedByUser>\r\n            <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>\r\n            <BusinessTransactionType>RFBU</BusinessTransactionType>\r\n            <AccountingDocumentType>SA</AccountingDocumentType>\r\n            <CompanyCode>DE01</CompanyCode>\r\n            <DocumentDate>2025-01-31</DocumentDate>\r\n            <PostingDate>2025-01-31</PostingDate>\r\n            <DocumentHeaderText>New G/L Entry</DocumentHeaderText>\r\n            <Item>\r\n                <ReferenceDocumentItem>1</ReferenceDocumentItem>\r\n                <CompanyCode>DE01</CompanyCode>\r\n                <GLAccount>13400900</GLAccount>\r\n                <AmountInTransactionCurrency currencyCode=\"EUR\">-798.31</AmountInTransactionCurrency>\r\n                <DebitCreditCode>H</DebitCreditCode>\r\n                <ProfitCenter>DE010000</ProfitCenter>\r\n            </Item>\r\n            <Item>\r\n                <ReferenceDocumentItem>2</ReferenceDocumentItem>\r\n                <CompanyCode>DE01</CompanyCode>\r\n                <GLAccount>50300000</GLAccount>\r\n                <AmountInTransactionCurrency currencyCode=\"EUR\">798.31</AmountInTransactionCurrency>\r\n                <DebitCreditCode>S</DebitCreditCode>\r\n                <ProfitCenter>DE010000</ProfitCenter>\r\n            </Item>\r\n            <CashDiscountTerms>\r\n                <CashDiscountBaseAmount>0.00</CashDiscountBaseAmount>\r\n            </CashDiscountTerms>\r\n        </JournalEntry>\r\n    </JournalEntryCreateRequest>\r\n</p1:JournalEntryBulkCreateRequest>\r\n",
+            "options": {
+              "raw": {
+                "language": "xml"
+              }
+            }
+          },
+          "url": {
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/learn/drp/public/cloud/FIpost",
+            "protocol": "https",
+            "host": [
+              "integration-7dvs6622",
+              "it-cpi005-rt",
+              "cfapps",
+              "eu20",
+              "hana",
+              "ondemand",
+              "com"
+            ],
+            "path": [
+              "http",
+              "consolut",
+              "learn",
+              "drp",
+              "public",
+              "cloud",
+              "FIpost"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39579054-ced9c20d-1457-4704-8596-69520e973cec"
+      },
+      {
+        "name": "New Request",
+        "id": "f0a62983-4d08-4769-823f-d6fe2d34ab46",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n  \"DocumentType\": \"RE\",\r\n  \"CompanyCode\": \"1000\",\r\n  \"Supplier\": \"1000001\",\r\n  \"InvoiceDate\": \"2024-02-05\",\r\n  \"DocumentDate\": \"2024-02-05\",\r\n  \"Currency\": \"EUR\",\r\n  \"GrossAmount\": \"1000.00\",\r\n  \"TaxAmount\": \"190.00\",\r\n  \"NetAmount\": \"810.00\",\r\n  \"Items\": [\r\n    {\r\n      \"ItemNumber\": \"10\",\r\n      \"PurchaseOrder\": \"4500001234\",\r\n      \"PurchaseOrderItem\": \"10\",\r\n      \"Quantity\": \"10\",\r\n      \"QuantityUnit\": \"PC\",\r\n      \"NetPrice\": \"81.00\",\r\n      \"TaxCode\": \"V0\",\r\n      \"GLAccount\": \"400000\",\r\n      \"CostCenter\": \"1010\"\r\n    }\r\n  ],\r\n  \"PaymentTerms\": \"0001\",\r\n  \"PostingDate\": \"2024-02-05\"\r\n}\r\n",
             "options": {
               "raw": {
                 "language": "json"
@@ -1672,7 +1717,7 @@
             }
           },
           "url": {
-            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/cross/drp/genericExtraValidation",
+            "raw": "https://integration-7dvs6622.it-cpi005-rt.cfapps.eu20.hana.ondemand.com/http/consolut/cross/drp/SupplierInvoice",
             "protocol": "https",
             "host": [
               "integration-7dvs6622",
@@ -1688,12 +1733,12 @@
               "consolut",
               "cross",
               "drp",
-              "genericExtraValidation"
+              "SupplierInvoice"
             ]
           }
         },
         "response": [],
-        "uid": "39579054-ced9c20d-1457-4704-8596-69520e973cec"
+        "uid": "39579054-f0a62983-4d08-4769-823f-d6fe2d34ab46"
       }
     ],
     "auth": {
