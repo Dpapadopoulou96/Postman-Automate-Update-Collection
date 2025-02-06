@@ -5,7 +5,7 @@
       "name": "SAP Integration Suite DRP (github)",
       "description": "A new Collection !!",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2025-02-05T11:39:09.000Z",
+      "updatedAt": "2025-02-05T13:58:51.000Z",
       "createdAt": "2024-11-08T13:24:52.000Z",
       "lastUpdatedBy": "39579054",
       "uid": "39579054-83f54cd5-6d8f-4317-87bb-1c7f68ef47d5"
@@ -1709,7 +1709,7 @@
           "header": [],
           "body": {
             "mode": "raw",
-            "raw": "{\r\n  \"DocumentType\": \"RE\",\r\n  \"CompanyCode\": \"1000\",\r\n  \"Supplier\": \"1000001\",\r\n  \"InvoiceDate\": \"2024-02-05\",\r\n  \"DocumentDate\": \"2024-02-05\",\r\n  \"Currency\": \"EUR\",\r\n  \"GrossAmount\": \"1000.00\",\r\n  \"TaxAmount\": \"190.00\",\r\n  \"NetAmount\": \"810.00\",\r\n  \"Items\": [\r\n    {\r\n      \"ItemNumber\": \"10\",\r\n      \"PurchaseOrder\": \"4500001234\",\r\n      \"PurchaseOrderItem\": \"10\",\r\n      \"Quantity\": \"10\",\r\n      \"QuantityUnit\": \"PC\",\r\n      \"NetPrice\": \"81.00\",\r\n      \"TaxCode\": \"V0\",\r\n      \"GLAccount\": \"400000\",\r\n      \"CostCenter\": \"1010\"\r\n    }\r\n  ],\r\n  \"PaymentTerms\": \"0001\",\r\n  \"PostingDate\": \"2024-02-05\"\r\n}\r\n",
+            "raw": "{\r\n  \"SupplierInvoice\": \"51050101\",\r\n  \"FiscalYear\": \"2018\",\r\n  \"CompanyCode\": \"1010\",\r\n  \"DocumentDate\": \"/Date(1528070400000)/\",\r\n  \"PostingDate\": \"/Date(1528070400000)/\",\r\n  \"InvoicingParty\": \"10300001\",\r\n  \"DocumentCurrency\": \"EUR\",\r\n  \"InvoiceGrossAmount\": 2023.00,\r\n  \"UnplannedDeliveryCost\": 0.00\r\n}\r\n",
             "options": {
               "raw": {
                 "language": "json"
